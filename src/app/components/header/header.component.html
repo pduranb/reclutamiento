@@ -1,0 +1,40 @@
+<nav class="navbar is-mobile is-fixed-top  animated slideInDown">
+    <div class="navbar-brand">
+        <a class="navbar-item">
+
+            <img src="../../../assets/image/logofam.png">
+        </a>
+        <a (blur)="activarMenu()" (click)="activarMenu()" role="button" class="navbar-burger" [ngClass]="{'is-active': activar}" data-target="navMenu" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div class="navbar-menu " [ngClass]="{'is-active animated fadeIn': activar}" id="navMenu">
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="field is-grouped">
+                    <p class="control">
+                        <a class=" button is-info">
+                            <span class="icon">
+                                <i class="fas fa-sign-in-alt"></i>
+
+                            </span>
+                            <span>
+                      Login
+                    </span>
+                        </a>
+                    </p>
+                    <p class="control">
+                        <a class="button has-text-weight-bold is-outlined is-dark">
+                            <span>Crear Cuenta</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</nav>

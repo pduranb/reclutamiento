@@ -1,0 +1,28 @@
+<div class="columns is-desktop is-centered">
+    <div class="column is-two-fifths-widescreen  is-narrow">
+        <div class="field">
+            <div class="control  has-icons-left ">
+                <input class="input" type="text" placeholder="Titulo, Palabra Clave" #titulo>
+                <span class="icon is-small is-left">
+                    <i class="fas fa-search"></i>        
+                  </span>
+            </div>
+        </div>
+    </div>
+    <div class="column is-two-fifths-widescreen   is-narrow">
+        <div class="field">
+            <div class="control  has-icons-left ">
+                <input #ciudad class="input" type="text" placeholder="Ciudad o Region">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-map-marker-alt"></i>          
+                  </span>
+            </div>
+        </div>
+    </div>
+    <div class="column is-1-widescreen is-narrow">
+        <button [routerLink]="['/trabajos', ciudad.value]" class="button is-info is-rounded ">
+                Buscar 
+        </button>
+    </div>
+
+</div>

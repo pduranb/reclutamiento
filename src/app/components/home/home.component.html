@@ -1,0 +1,71 @@
+<section class="hero is-medium  has-carousel">
+    <div class="hero-carousel carousel-animated carousel-animate-fade">
+        <div class='carousel-container'>
+            <div class='carousel-item has-background is-active'>
+                <img class="is-background" src="../../../assets/image/recruitfam1.jpg" alt="" />
+            </div>
+            <div class='carousel-item has-background'>
+                <img class="is-background" src="../../../assets/image/recruitfam2.jpg" alt="" />
+            </div>
+            <div class='carousel-item has-background'>
+                <img class="is-background" src="../../../assets/image/recruitfam3.jpg" alt="" />
+            </div>
+            <div class='carousel-item has-background'>
+                <img class="is-background" src="../../../assets/image/recruitfam4.jpg" alt="" />
+            </div>
+            <div class='carousel-item has-background'>
+                <img class="is-background" src="../../../assets/image/recruitfam5.jpg" alt="" />
+            </div>
+            <div class='carousel-item has-background'>
+                <img class="is-background" src="../../../assets/image/recruitfam6.jpg" alt="" />
+            </div>
+        </div>
+        <div class="carousel-navigation is-overlay">
+            <div class="carousel-nav-left">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </div>
+            <div class="carousel-nav-right">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <div class="hero-body has-text-centered">
+        <div class="container transbox">
+            <h1 class="title is-1 has-text-white">
+                Sitio de Reclutamiento
+            </h1>
+            <h2 class="subtitle is-2 has-text-white">
+                Empresa FAM
+            </h2>
+
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="card-columns animated fadeIn">
+        <div [routerLink]="['/trabajos', cargo.nombre]" class="card btn-11 pointerCard" *ngFor="let cargo of cargos" [ngClass]="{'activoCargo has-text-white': seleccion===cargo ,'inactivoCargo': seleccion!==cargo}" (mouseover)="changeStyle(cargo)" (mouseout)="desmarcar()">
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-content has-text-centered">
+                        <p class="title is-2" [ngClass]="{' has-text-white': seleccion===cargo}">
+                            {{cargo.nombre}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="columns  is-centered  cargos is-multiline is-mobile">
+        <div class="column  has-text-centered is-narrow  is-3">
+
+            <div class="notification  " [ngClass]="{'activoCargo': seleccion===hero ,'inactivoCargo': seleccion!==hero}" (mouseover)="changeStyle(hero)" (mouseout)="desmarcar()">
+                <h1 class="title is-4">
+                </h1>
+            </div>
+
+
+
+        </div>
+    </div> -->
+
+</section>

@@ -1,0 +1,111 @@
+<section class="section trabajoscontent animated fadeIn">
+
+    <div class="container ">
+        <div class="columns">
+            <div class="column">
+                <nav class="navbar is-mobile">
+
+                    <div class="navbar-menu">
+                        <div class="navbar-start">
+                            <div class="navbar-item">
+                                <p> <strong>Ciudad: </strong> </p>
+                            </div>
+                            <div class="navbar-item">
+                                <div class="select ">
+                                    <select>
+                                      <option value="Argentina">Antofagasta</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="navbar-item">
+                                <p> <strong>Tipo de Empleo: </strong> </p>
+                            </div>
+                            <div class="navbar-item">
+                                <div class="select ">
+                                    <select>
+                                      <option value="Argentina">Tiempo de Completo</option>
+                                      <option value="Bolivia">Medio Tiempo</option>
+                                      <option value="Brazil">Por contrato</option>
+                                      <option value="Chile">Indefinido</option>
+                                      <option value="Colombia">Temporal</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="navbar-item">
+                                <a class="button is-info is-rounded">Filtrar</a>
+                            </div>
+
+                        </div>
+
+                        <div class="navbar-end">
+                            <div class="navbar-item">
+
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-4 ">
+                <div class="box trabajosLista ">
+
+                    <div *ngFor="let item of [1,2,3,4,5,6]" class="columns ">
+                        <div class="content box">
+                            <p>
+                                <a><strong>Planificador</strong></a>
+                                <br> Ciudad.
+                                <br> Lorem ipsum dolor sit amet consectetur adipisi rerum quia quisquam c sit eum e vero doloremque iste.
+                                <br><small>hace 3 dias</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="column is-8">
+                <div class="content box descripcion">
+                    <!-- Main container -->
+                    <nav class="level">
+                        <!-- Left side -->
+                        <div class="level-left">
+                            <div class="level-item">
+                                <p class="title is-2">
+                                    <strong>Titulo</strong>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!-- Right side -->
+                        <div class="level-right">
+                            <p class="level-item"><a class="button is-rounded is-medium is-success">Postular</a></p>
+                        </div>
+                    </nav>
+
+                    <h2>Descripcion</h2>
+                    <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus
+                        dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
+                    <ul>
+                        <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
+                        <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
+                        <li>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
+                        <li>Ut non enim metus.</li>
+                    </ul>
+                    <h3>Requerimientos</h3>
+                    <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a href="#">non ante</a>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
+                    <ol>
+                        <li>Donec blandit a lorem id convallis.</li>
+                        <li>Cras gravida arcu at diam gravida gravida.</li>
+                        <li>Integer in volutpat libero.</li>
+                        <li>Donec a diam tellus.</li>
+                        <li>Aenean nec tortor orci.</li>
+                        <li>Quisque aliquam cursus urna, non bibendum massa viverra eget.</li>
+                        <li>Vivamus maximus ultricies pulvinar.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

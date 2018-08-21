@@ -1,1 +1,78 @@
-/* You can add global styles to this file, and also import other style files */
+    /* You can add global styles to this file, and also import other style files */
+    
+    body,
+    html {
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    div.transbox {
+        background: rgba(0, 0, 0, 0.5);
+    }
+    
+    .recientes {
+        margin-top: 24px;
+        margin-left: 5rem;
+    }
+    
+    .navbar-menu {
+        background-color: rgba(255, 255, 255, 0.2) !important;
+    }
+    
+    .footer {
+        position: absolute;
+        width: 100%;
+        padding: 0.8rem !important;
+        background-color: rgba(255, 255, 255, 0.2) !important;
+    }
+    
+    .is-contenido {
+        min-height: 100%;
+        margin-bottom: -2.7rem;
+        /* Equivalent to footer's height */
+        padding-bottom: 2.7rem;
+        /* Equivalent to footer's height */
+    }
+    
+    .descripcion {
+        height: 100%;
+    }
+    
+    .trabajoscontent {
+        padding-top: 5.6rem !important;
+    }
+    
+    .trabajosLista {
+        overflow-y: auto;
+        height: 72vh;
+    }
+    
+    .activoCargo {
+        background: #008CEE !important;
+    }
+    
+    .inactivoCargo {
+        background: #E8E8E8 !important;
+    }
+    /* Gerente de Mantenimiento y Servicio Operacionales */
+    
+    .card-columns .card {
+        margin-bottom: 0.75rem;
+        cursor: pointer;
+    }
+    
+    @media (min-width: 576px) {
+        .card-columns {
+            -webkit-column-count: 5;
+            -moz-column-count: 5;
+            column-count: 5;
+            -webkit-column-gap: 1.25rem;
+            -moz-column-gap: 1.25rem;
+            column-gap: 1.25rem;
+        }
+        .card-columns .card {
+            display: inline-block;
+            width: 100%;
+        }
+    }
